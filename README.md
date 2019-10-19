@@ -28,8 +28,8 @@
            to model molecular docking  and the binding sites of chemical reactions.
 ## Independent Set Problem
    
-    In independent set problem we check if 2 sets of vertices every vertex of one set is connected with all the vertices of another set
-    and that no vertex of same set are connected to each other.
+    In independent set problem we check if 2 sets of vertices every vertex of one set is connected with all the vertices
+    of another setand that no vertex of same set are connected to each other.
     
     In isp.py
      The function isp first gets set 1 of vertices and pushes remaining vertices in set2.
