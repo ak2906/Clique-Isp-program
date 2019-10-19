@@ -38,10 +38,12 @@
        [1,1,1,0,0,0],
        [1,1,1,0,0,0],
        [1,1,1,0,0,0]]
-       isp set=[0,1,2]
+       
 ###       Output 
-         Independent set present  [0,1,2]
-        isp set=[0,1,3]
+          isp set=[0,1,2]
+          Independent set present  [0,1,2]
+      
 ###        Output
-          No INdependent Set present
+            isp set=[0,1,3]
+            No Independent Set present
       
