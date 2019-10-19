@@ -22,6 +22,9 @@
 ###        Output
             Clique set=[0,1,3]
              No clique Present
+###        Applications
+             Clique-finding algorithms have been used in chemistry,to find chemicals that match a target structure and to model
+             molecular docking  and the binding sites of chemical reactions.
 ## Independent Set Problem
    
     In independent set problem we check if 2 sets of vertices every vertex of one set is connected with all the vertices of another set
@@ -48,4 +51,6 @@
 ###        Output
             isp set=[0,1,3]
             No Independent Set present
+             
+      
       
