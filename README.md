@@ -14,12 +14,14 @@
             [1,0,1,1],
             [1,1,0,1],
             [0,1,1,0]]
+            
+###        Output
             Clique Set=[0,1,2]
-###        Output
             Clique is present [0,1,2]
-            Clique set ={0,1,3]
+            
 ###        Output
-           No clique Present
+            Clique set=[0,1,3]
+             No clique Present
 ## Independent Set Problem
    
     In independent set problem we check if 2 sets of vertices every vertex of one set is connected with all the vertices of another set
