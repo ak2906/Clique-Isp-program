@@ -1,6 +1,6 @@
 import sys
-def select(vertex):
-    return random.choice(vertex)
+import random
+
 def failure():
     print("No independent set present")
     sys.exit()
@@ -11,14 +11,18 @@ def success(s1,s2):
 def isp(m,vertex1,t1,n):
     s1=[]
     s2=[]
-    for i in range(t1):
-        x=int(input("Select a vertex"))
-        s1.append(x)
+    for i in range(t1):  
+        while(len(s1)<t1):
+            x=random.choice(vertex1)
+            y=int((x))
+            if(y not in s1):
+                s1.append(y)   
+    print(s1)
     for i in range(n):
         b=bool(i in s1)
         if(b==False):
             s2.append(i)
-#     print(s2)
+    print(s2)
     for i in range(len(s1)):
         x=int(s1[i])
         for j in range(len(s1)):
@@ -55,6 +59,7 @@ vertex1=[]
 #     matrix.append(a) 
 # For printing the matrix 
 for i in range(n): 
+    vertex1.append(i)
     for j in range(n): 
         print(matrix[i][j], end = " ") 
     print() 
