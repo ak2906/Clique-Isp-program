@@ -4,17 +4,31 @@ import sys
 def failure():
     print("No clique present")
     sys.exit()
+
+
 def success(s):
     print("Clique present:")
     print(s)
-def select(vertex):
-    return random.choice(vertex)
+
+def select(v,s):
+    s1=[]
+    x=random.choice(v)
+    y=int(x)
+    return y
+
 def clique(m,v,t1,n):
     s=[]
+    counter=True
     for i in range(t1):
-    #         x=input(select(v))
-        x=int(input("Select a vertex"))
-        s.append(x)
+        while(len(s)<t1):
+            x=select(v,s)
+            y=int(x)
+            z=bool(y in s)
+            print(z)
+            # print(y)
+            if(y not in s):
+                s.append(y)
+     print(s)
     for i in range(n):
         x=bool(i in s)
         for j in range(n):
@@ -25,8 +39,8 @@ def clique(m,v,t1,n):
     success(s)
     
 n=int(input("Enter the no of vertex"))
-matrix=[[0,1,1,0],[1,0,1,1],[1,1,0,1],[0,1,1,0]]
-# matrix=[]
+matrix=[[0,1,1,1,1],[1,0,1,1,1],[1,1,0,0,1],[1,1,0,0,0],[1,1,1,0,0]]
+#matrix=[]
 vertex1=[]
 # print("Enter the entries rowwise:") 
 # for i in range(n):
@@ -35,11 +49,10 @@ vertex1=[]
 #     for j in range(n): 
 #          a.append(int(input())) 
 #     matrix.append(a) 
-# For printing the matrix 
 for i in range(n): 
+    vertex1.append(i)
     for j in range(n): 
         print(matrix[i][j], end = " ") 
     print() 
 t=int(input("Enter the size of clique"))
-
 clique(matrix,vertex1,t,n)
