@@ -6,7 +6,7 @@
     So the graph would have 4 vertices namely (0,1,2,3).
     The matrix with the size of the clique is passed to clique function.
     In clique function:
-       In this function first we take the vertices for which we have to check if a clique exists or not.
+       In this function vertices are randomly choosen for which we have to check if a clique exists or not.
        After this we check if there is no edge between 2 given vertices and also if they both belong to the clique
        set.
        If this condition satifies then failure occurs else success.
@@ -32,10 +32,10 @@
     of another setand that no vertex of same set are connected to each other.
     
     In isp.py
-     The function isp first gets set 1 of vertices and pushes remaining vertices in set2.
-     It then checks if vertices of set 1 are connected to each other. if yes then failure occurs.
-     Else it checks if vertices of set 2 are connected to each other. if yes then failure occurs.
-     Then it checks if each vertex of set 1 are connected to all vertices of set 2.if no then failure occurs.
+     The function isp first gets set1 of vertices(randomly) and pushes remaining vertices in set2.
+     It then checks if vertices of set1 are connected to each other. if yes then failure occurs.
+     Else it checks if vertices of set2 are connected to each other. if yes then failure occurs.
+     Then it checks if each vertex of set1 are connected to all vertices of set 2.if no then failure occurs.
      After all these conditions are successfully checked then success occurs.
 ###     Input
        matrix=[[0,0,0,1,1,1],
