@@ -1,4 +1,4 @@
-# Clique-ISP-program
+# Clique-ISP-Python program
    Python Program for Clique Decision Problem and Independent Set Problem
 ##  Clique Decision Problem:
     A complete subgraph of a graph G=(V,E) is a clique.
